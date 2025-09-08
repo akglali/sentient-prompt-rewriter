@@ -17,7 +17,7 @@ A simple Chrome/Edge extension that takes any text you select and rewrites it in
 
 ### 1. Clone this repo
 ```bash
-git clone https://github.com/YOURUSERNAME/sentient-prompt-rewriter.git
+git clone https://github.com/akglali/sentient-prompt-rewriter.git
 cd sentient-prompt-rewriter/extension
 ```
 
