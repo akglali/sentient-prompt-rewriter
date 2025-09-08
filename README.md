@@ -23,4 +23,4 @@ cd sentient-prompt-rewriter/extension
 ```
 
 ### Load in Chrome/Edge
-# 1.
+#### 1.
