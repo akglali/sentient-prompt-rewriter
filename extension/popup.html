@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sentient Prompt Rewriter</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 12px;
+        width: 380px;
+      }
+      textarea {
+        width: 100%;
+        min-height: 120px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      button {
+        padding: 8px;
+        cursor: pointer;
+      }
+      .grow {
+        flex: 1;
+      }
+      .hint {
+        color: #666;
+        font-size: 12px;
+        margin-top: 6px;
+      }
+      #output {
+        min-height: 100px;
+        margin-top: 8px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+      }
+      .small {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Sentient Prompt Rewriter (Dobby)</h3>
+
+    <label class="small">Input</label>
+    <textarea id="input" placeholder="Paste or use 'Use selection'…"></textarea>
+
+    <div class="row">
+      <button id="useSelection" class="grow">Use selection</button>
+      <button id="rewrite" class="grow" disabled>Rewrite</button>
+    </div>
+
+    <label class="small" style="margin-top: 10px">Endpoint</label>
+    <div class="row">
+      <input
+        id="endpoint"
+        type="text"
+        placeholder="server or domain e.g. http://91.98.16.122:8787/rewrite"
+        class="grow"
+      />
+      <button id="saveEndpoint">Save</button>
+    </div>
+
+    <label class="small" style="margin-top: 10px">Output</label>
+    <textarea
+      id="output"
+      placeholder="Rewritten prompt will appear here…"
+      readonly
+    ></textarea>
+
+    <div class="row">
+      <button id="copyOutput" class="grow">Copy</button>
+      <span class="hint grow" style="text-align: right"
+        >Output will be copied to clipboard</span
+      >
+    </div>
+
+    <div class="hint">
+      Tip: select text on a page, then right-click → “Rewrite with Dobby”, or
+      click “Use selection”.
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
