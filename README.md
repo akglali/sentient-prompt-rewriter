@@ -4,6 +4,9 @@ A simple Chrome/Edge extension that takes any text you select and rewrites it in
 
 ---
 
+## Youtube Video 
+- [How to User](https://youtu.be/IMQIxOI7wn0).
+
 ## 🚀 Features
 - Right-click → “Rewrite with Dobby”
 - Popup window with input/output boxes
